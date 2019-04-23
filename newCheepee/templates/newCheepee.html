@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    
+{% for x in Cheepeess %}
+    <div class="card" id="card2">
+      <img class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{ x.name }}</h5>
+        <p class="card-text">{{ x.strap }}</p>
+        <a href="#" class="btn btn-primary">See Cheapie</a>
+      </div>
+    </div>
+
+{% empty %}
+     <p>There are no Cheepees</p>
+{% endfor %}
+
+
+
+{% endblock content %}
+
