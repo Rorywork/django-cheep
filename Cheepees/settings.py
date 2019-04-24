@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['django-framework-cheapies-rory95.c9users.io']
 
+STATICFILES_DIRS = [
+	"/django-framework-cheapies/newCheepee/static",
+]
+
 
 # Application definition
 
